@@ -11,6 +11,7 @@
 		8EC948132A65200D007BD061 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC948122A65200D007BD061 /* ContentView.swift */; };
 		8EC948152A65200E007BD061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC948142A65200E007BD061 /* Assets.xcassets */; };
 		8EC948182A65200E007BD061 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC948172A65200E007BD061 /* Preview Assets.xcassets */; };
+		8EC9481F2A6520A4007BD061 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9481E2A6520A4007BD061 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8EC948122A65200D007BD061 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8EC948142A65200E007BD061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EC948172A65200E007BD061 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8EC9481E2A6520A4007BD061 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				8EC948102A65200D007BD061 /* camera_appApp.swift */,
 				8EC948122A65200D007BD061 /* ContentView.swift */,
+				8EC9481E2A6520A4007BD061 /* CameraView.swift */,
 				8EC948142A65200E007BD061 /* Assets.xcassets */,
 				8EC948162A65200E007BD061 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC9481F2A6520A4007BD061 /* CameraView.swift in Sources */,
 				8EC948132A65200D007BD061 /* ContentView.swift in Sources */,
 				8EC948112A65200D007BD061 /* camera_appApp.swift in Sources */,
 			);
