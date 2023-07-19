@@ -12,6 +12,7 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
+            ErrorView(error: model.error)
             FrameView(image: model.frame)
                 .edgesIgnoringSafeArea(.all)
         }
