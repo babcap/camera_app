@@ -12,9 +12,15 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            ErrorView(error: model.error)
             FrameView(image: model.frame)
                 .edgesIgnoringSafeArea(.all)
+            
+            ControlView(
+              comicSelected: $model.comicFilter,
+              monoSelected: $model.monoFilter,
+              crystalSelected: $model.crystalFilter)
+
+            ErrorView(error: model.error)
         }
     }
 }
