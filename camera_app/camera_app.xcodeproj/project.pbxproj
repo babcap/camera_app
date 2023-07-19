@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E08B18A2A67EC0D000E905C /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08B1892A67EC0D000E905C /* CameraError.swift */; };
+		8E08B18D2A67EC9A000E905C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08B18C2A67EC99000E905C /* ErrorView.swift */; };
 		8EC948112A65200D007BD061 /* camera_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC948102A65200D007BD061 /* camera_appApp.swift */; };
 		8EC948132A65200D007BD061 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC948122A65200D007BD061 /* ContentView.swift */; };
 		8EC948152A65200E007BD061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC948142A65200E007BD061 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		8E08B1892A67EC0D000E905C /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		8E08B18C2A67EC99000E905C /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		8EC9480D2A65200D007BD061 /* camera_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC948102A65200D007BD061 /* camera_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera_appApp.swift; sourceTree = "<group>"; };
 		8EC948122A65200D007BD061 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 			path = Camera;
 			sourceTree = "<group>";
 		};
+		8E08B18E2A67EC9F000E905C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E08B18C2A67EC99000E905C /* ErrorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8EC948042A65200D007BD061 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 				8EC948102A65200D007BD061 /* camera_appApp.swift */,
 				8EC948122A65200D007BD061 /* ContentView.swift */,
 				8EC9481E2A6520A4007BD061 /* CameraView.swift */,
+				8E08B18E2A67EC9F000E905C /* View */,
 				8E08B18B2A67EC10000E905C /* Camera */,
 				8EC948142A65200E007BD061 /* Assets.xcassets */,
 				8EC948162A65200E007BD061 /* Preview Content */,
@@ -153,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E08B18D2A67EC9A000E905C /* ErrorView.swift in Sources */,
 				8EC9481F2A6520A4007BD061 /* CameraView.swift in Sources */,
 				8EC948132A65200D007BD061 /* ContentView.swift in Sources */,
 				8EC948112A65200D007BD061 /* camera_appApp.swift in Sources */,
