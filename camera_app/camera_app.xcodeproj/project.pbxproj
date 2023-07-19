@@ -11,6 +11,7 @@
 		8E08B18D2A67EC9A000E905C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08B18C2A67EC99000E905C /* ErrorView.swift */; };
 		8E08B1902A67ED16000E905C /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08B18F2A67ED16000E905C /* ToggleButton.swift */; };
 		8E08B1922A67ED31000E905C /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08B1912A67ED31000E905C /* ControlView.swift */; };
+		8E08B1952A67EE1B000E905C /* CGImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08B1942A67EE1B000E905C /* CGImage+Extensions.swift */; };
 		8EC948112A65200D007BD061 /* camera_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC948102A65200D007BD061 /* camera_appApp.swift */; };
 		8EC948132A65200D007BD061 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC948122A65200D007BD061 /* ContentView.swift */; };
 		8EC948152A65200E007BD061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC948142A65200E007BD061 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		8E08B18C2A67EC99000E905C /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		8E08B18F2A67ED16000E905C /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		8E08B1912A67ED31000E905C /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		8E08B1942A67EE1B000E905C /* CGImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extensions.swift"; sourceTree = "<group>"; };
 		8EC9480D2A65200D007BD061 /* camera_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC948102A65200D007BD061 /* camera_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera_appApp.swift; sourceTree = "<group>"; };
 		8EC948122A65200D007BD061 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8E08B1932A67EDA8000E905C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E08B1942A67EE1B000E905C /* CGImage+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8EC948042A65200D007BD061 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 				8EC9481E2A6520A4007BD061 /* CameraView.swift */,
 				8E08B18E2A67EC9F000E905C /* View */,
 				8E08B18B2A67EC10000E905C /* Camera */,
+				8E08B1932A67EDA8000E905C /* Extensions */,
 				8EC948142A65200E007BD061 /* Assets.xcassets */,
 				8EC948162A65200E007BD061 /* Preview Content */,
 			);
@@ -173,6 +184,7 @@
 				8E08B18D2A67EC9A000E905C /* ErrorView.swift in Sources */,
 				8E08B1902A67ED16000E905C /* ToggleButton.swift in Sources */,
 				8EC9481F2A6520A4007BD061 /* CameraView.swift in Sources */,
+				8E08B1952A67EE1B000E905C /* CGImage+Extensions.swift in Sources */,
 				8EC948132A65200D007BD061 /* ContentView.swift in Sources */,
 				8EC948112A65200D007BD061 /* camera_appApp.swift in Sources */,
 				8E08B1922A67ED31000E905C /* ControlView.swift in Sources */,
