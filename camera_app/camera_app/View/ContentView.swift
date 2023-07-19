@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        CameraView()
+        ZStack {
+          FrameView(image: nil)
+            .edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
