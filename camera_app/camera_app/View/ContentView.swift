@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-          FrameView(image: nil)
-            .edgesIgnoringSafeArea(.all)
+            FrameView(image: nil)
+                .edgesIgnoringSafeArea(.all)
         }
     }
 }
