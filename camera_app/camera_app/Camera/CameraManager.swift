@@ -29,6 +29,20 @@ class CameraManager: ObservableObject {
     }
     
     private func configure() {
+        checkPermissions()
+        sessionQueue.async {
+            self.configureCaptureSession()
+            self.session.startRunning()
+        }
+    }
+
+    func set(
+        _ delegate: AVCaptureVideoDataOutputSampleBufferDelegate,
+        queue: DispatchQueue
+    ) {
+        sessionQueue.async {
+            self.videoOutput.setSampleBufferDelegate(delegate, queue: queue)
+        }
     }
 
     private func set(error: CameraError?) {
@@ -62,7 +76,7 @@ class CameraManager: ObservableObject {
             set(error: .unknownAuthorization)
         }
     }
-
+    
     private func configureCaptureSession() {
         guard status == .unconfigured else {
             return
@@ -96,19 +110,19 @@ class CameraManager: ObservableObject {
             status = .failed
             return
         }
-
+        
         if session.canAddOutput(videoOutput) {
-          session.addOutput(videoOutput)
-          videoOutput.videoSettings =
+            session.addOutput(videoOutput)
+            videoOutput.videoSettings =
             [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
-          let videoConnection = videoOutput.connection(with: .video)
-          videoConnection?.videoOrientation = .portrait
+            let videoConnection = videoOutput.connection(with: .video)
+            videoConnection?.videoOrientation = .portrait
         } else {
-          set(error: .cannotAddOutput)
-          status = .failed
-          return
+            set(error: .cannotAddOutput)
+            status = .failed
+            return
         }
-
+        
         status = .configured
     }
 }
